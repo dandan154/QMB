@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Build the QMB Blockchain</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="../styles/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../styles/cover.css" rel="stylesheet">
+  </head>
+  <script>
+    function setCookie(){
+      console.log("retrieve contract clicked!");
+      document.cookie="contractAddress=" + document.getElementById("conAddrInput").value +"; path=../";
+      window.location.href = "./dashboard.html";
+    }
+  </script>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Build The QMB Blockchain</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../SRC/index.html">DUSA</a>
+        <a class="nav-link active" href="../Org/index.html">Organisation</a>
+      </nav>
+    </div>
+  </header>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <h1>Member</h1>
+        <p>If you are a member of the charity organisation, click below to examine the current candidates running for president and cast your vote!</p>
+      </div>
+      <div class="col-md-6">
+        <h1>President</h1>
+        <p>Are you the administrator of the organisation? Click below to manage the structure of the organisation and distribute the organisation's wealth. </p>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <button class="btn btn-lg btn-secondary" id="RetrieveContract" onclick="location.href='./member.html'">Login as Member</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-lg btn-secondary" id="RetrieveContract" onclick="location.href='./president.html'">Login as President</button>
+      </div>
+    </div>
+
+  <footer class="mastfoot mt-auto">
+  </footer>
+</div>
+
+
+</body></html>
