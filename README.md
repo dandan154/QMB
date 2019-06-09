@@ -1,6 +1,6 @@
 # QMB-Blockchain
 
-A selection of smart contracts written in Solidity for deployment within a local blockchain network at the university known as the "QMB Blockchain".
+A selection of smart contracts written in Solidity for deployment within a local Ethereum blockchain at the university known as the "QMB Blockchain".
 
 /chain/ - A selection of bash scripts and JSON files used for the initialisation of the network across multiple servers.
 
